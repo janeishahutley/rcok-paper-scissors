@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main {
+  background: #333;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+}
+
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+.choices-off {
+  pointer-events: none;
+}
+
+.choice {
+  color: lightblue;
+  cursor: pointer;
+}
+
+.choice:hover {
+  color: #003699;
+}
+
+span {
+  color: lightblue;
+}
+
+.message,
+.bot-message {
+  display: none;
+  font-size: 25px;
+  background: white;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.16);
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0.5em;
+  text-align: center;
+  color: #333;
+}
+
+.bot-message {
+  width: 300px;
+  height: 220px;
+}
+
+.tied-round {
+  color: red;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-left: 1em;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.btn {
+  padding: 1.25em 1.5em;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  margin-top: 1em;
+  cursor: pointer;
+  background-color: lightblue;
+  color: #333;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #003699;
+  color: #fff;
+}
+
+.bot-score {
+  margin-top: 1em;
+}
+
+@media (min-width: 390px) and (max-width: 600px) {
+  .choice {
+    font-size: 80px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .bot-message,
+  .message {
+    display: fixed;
+    top: 45px;
+    left: 50px;
+    right: 0;
+    width: 180px;
+    height: 220px;
+  }
+
+  .choices {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2em;
+  }
+  .scores {
+    margin-left: 2em;
+    margin-top: 4em;
+    font-size: 1.3rem;
+    color: #333;
+  }
+  .btn {
+    padding: .75em 1em;
+  }
+  .tied-round {
+    margin-top: 1em;
+  }
+}

@@ -18,27 +18,33 @@
     <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors</title>
   </head>
-  <body> 
-    <main>
-    <div class="container">
-      <h1>Score <span>TEN</span> to WIN</h1>
-      <div class="choices">
-        <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
-        <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
-        <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i>
-      </div>
-    </main>
-    <div class="scores">
-      <h2 class="human-score">HUMAN SCORE: 0</h2>
-      <h2 class="bot-score">BOT SCORE: 0</h2>
-    </div>
+  <body>
+    <div class="game-container">
+      <section class="choices-content">
+        <h1 class="header">Score <span>TEN</span> to WIN</h1>
+        <div class="choices">
+          <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
+          <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
+          <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i>
+        </div>
+      </section>
 
-    <div class="bot-message"></div>
-    <div class="message">
-      <h2 class="winning-message"></h2>
-      <button class="btn">Play Again?</button>
+      <section class="content">
+        <div class="scores">
+          <h2 class="human-score">
+            HUMAN SCORE <span class="human-total">0</span>
+          </h2>
+          <h2 class="bot-score">BOT SCORE <span class="bot-total">0</span></h2>
+        </div>
+      </section>
+      <section class="message-container">
+        <div class="bot-message"></div>
+        <div class="message">
+          <h2 class="winning-message"></h2>
+        </div>
+        <button class="btn">Play Again?</button>
+      </section>
     </div>
-</div>
     <script src="script.js"></script>
   </body>
 </html>

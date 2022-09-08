@@ -9,3 +9,4 @@ A simple game of rock, paper and scissors where users compete against a computer
 ## Technologies
 
 - HTML || CSS || JavaScript
+ 
